@@ -19,19 +19,19 @@
             android:id="@+id/tvNome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nome do Contato"
+            android:text="Nome do Prato"
             android:textSize="16sp"
             android:textStyle="bold" />
         <TextView
-            android:id="@+id/tvTelefone"
+            android:id="@+id/tvPeso"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="(99) 99999-9999" />
+            android:text="Peso do prato" />
         <TextView
-            android:id="@+id/tvEmail"
+            android:id="@+id/tvCategoria"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="email@email.com"
+            android:text="Categoria do prato"
             android:textColor="#555" />
     </LinearLayout>
 </LinearLayout>

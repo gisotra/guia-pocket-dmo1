@@ -10,14 +10,14 @@ import android.widget.TextView
 import com.example.projeto.R
 import com.example.projeto.model.Prato
 
-class EstabelecimentoAdapter(
+class PratoAdapter(
     private val context: Context,
     private val lista: List<Prato>
 ) : ArrayAdapter<Prato>(context, 0, lista) {
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         val itemView = convertView ?: LayoutInflater.from(context)
-            .inflate(R.layout.itemestabelecimento, parent, false)
+            .inflate(R.layout.itemprato, parent, false)
         val contato = lista[position]
         val imgFoto = itemView.findViewById<ImageView>(R.id.imgFoto)
         val tvNome = itemView.findViewById<TextView>(R.id.tvNome)
