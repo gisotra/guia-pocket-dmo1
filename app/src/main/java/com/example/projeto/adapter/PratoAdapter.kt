@@ -18,11 +18,16 @@ class PratoAdapter(
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         val itemView = convertView ?: LayoutInflater.from(context)
             .inflate(R.layout.itemprato, parent, false)
-        val contato = lista[position]
+        val prato = lista[position]
         val imgFoto = itemView.findViewById<ImageView>(R.id.imgFoto)
         val tvNome = itemView.findViewById<TextView>(R.id.tvNome)
-        val tvTelefone = itemView.findViewById<TextView>(R.id.tvTelefone)
-        val tvEmail = itemView.findViewById<TextView>(R.id.tvEmail)
+        val tvPeso = itemView.findViewById<TextView>(R.id.tvPeso)
+        val tvCategoria = itemView.findViewById<TextView>(R.id.tvCategoria)
+
+        imgFoto.setImageResource(prato.foto)
+        tvNome.text = prato.nome
+        tvPeso.text = "%.2f".format(prato.peso)
+        tvCategoria.text = prato.categoria.name
 
         return itemView
     }
