@@ -8,12 +8,12 @@ import android.widget.ArrayAdapter
 import android.widget.ImageView
 import android.widget.TextView
 import com.example.projeto.R
-import com.example.projeto.model.Estabelecimento
+import com.example.projeto.model.Prato
 
 class EstabelecimentoAdapter(
     private val context: Context,
-    private val lista: List<Estabelecimento>
-) : ArrayAdapter<Estabelecimento>(context, 0, lista) {
+    private val lista: List<Prato>
+) : ArrayAdapter<Prato>(context, 0, lista) {
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         val itemView = convertView ?: LayoutInflater.from(context)
