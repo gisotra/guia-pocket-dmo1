@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="primary">#EF1459</color>
+    <color name="secondary">#CA1C47</color>
+    <color name="background">#F6EAEA</color>
+    <color name="onPrimary">#E78F8F</color>
+    <color name="onSecondary">#FFB2B2</color>
+    <!--
+    ● primary → cor principal (usada em botões, barra superior etc.)
+    ● secondary → cor de apoio (detalhes e destaques)
+    ● background → cor de fundo
+    ● onPrimary → cor de texto sobre o fundo primary
+    ● onSecondary → cor de texto sobre o fundo secondary
+    -->
 </resources>

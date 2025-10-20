@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <!-- starters -->
+
+    <string name="ent1_nome">Grilled Chicken</string>
+    <string name="ent1_descricao">A classic meal featuring a juicy, lightly seasoned chicken fillet grilled to perfection. Served with fluffy white rice and cooked beans.</string>
+
+    <!-- drinks -->
+
+    <string name="bbd1_nome">Italian Soda</string>
+    <string name="bbd1_descricao">A light and refreshing drink made with sparkling water, ice, and a delicious fruit-flavored syrup of your choice.</string>
+
+    <!-- side dishes -->
+
+    <string name="prc1_nome">French Fries</string>
+    <string name="prc1_descricao">A generous portion of fries, cut into sticks, golden and crispy on the outside, with a soft and delicious interior.</string>
+
+    <!-- appetizers -->
+
+    <string name="apt1_nome">Toasts</string>
+    <string name="apt1_descricao">Served warm, they guarantee an unmatched texture in every bite.</string>
+
+    <string name="apt2_nome">Tuna Pâté</string>
+    <string name="apt2_descricao">A classic and creamy pâté, prepared with high-quality tuna and seasoned with selected spices.</string>
+
+    <string name="apt3_nome">Bread Rolls</string>
+    <string name="apt3_descricao">Fresh and soft, these bread rolls are the perfect base to enjoy your favorite sides.</string>
+
+    <!-- desserts -->
+
+    <string name="sbm1_nome">Meringue</string>
+    <string name="sbm1_descricao">A light dessert with a crispy exterior and soft interior, made mainly from egg whites whipped with sugar.</string>
+</resources>
