@@ -9,4 +9,5 @@
         <item name="colorOnPrimary">@color/onPrimary</item>
         <item name="colorOnSecondary">@color/onSecondary</item>
     </style>
+    <style name="Theme.Projeto"/>
 </resources>

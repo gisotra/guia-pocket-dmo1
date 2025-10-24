@@ -22,7 +22,7 @@ class DetalhePratoActivity : AppCompatActivity() {
 
     private fun loadData()
     {
-        prato = intent.getSerializableExtra("prato", Prato::class.java) as Prato
+        prato = intent.getSerializableExtra("prato") as Prato
     }
 
     private fun setupViews()

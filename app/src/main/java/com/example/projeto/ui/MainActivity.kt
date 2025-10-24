@@ -18,6 +18,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        /*Inicialização*/
         loadData()
         setupViews()
         setupListeners()
@@ -28,38 +30,34 @@ class MainActivity : AppCompatActivity() {
             Prato(
                 R.drawable.merengue,
                 Categoria.SOBREMESA,
-                8.5,
-                "merengue"
+                0.5,
+                15.50,
+                getString(R.string.sbm1_nome),
+                getString(R.string.sbm1_descricao)
             ),
             Prato(
-                R.drawable.merengue,
-                Categoria.SOBREMESA,
-                8.5,
-                "merengue"
+                R.drawable.frango,
+                Categoria.ENTRADA,
+                1.1,
+                22.50,
+                getString(R.string.ent1_nome),
+                getString(R.string.ent1_descricao)
             ),
             Prato(
-                R.drawable.merengue,
-                Categoria.SOBREMESA,
-                8.5,
-                "merengue"
+                R.drawable.soda,
+                Categoria.BEBIDA,
+                0.2,
+                15.00,
+                getString(R.string.bbd1_nome),
+                getString(R.string.bbd1_descricao)
             ),
             Prato(
-                R.drawable.merengue,
-                Categoria.SOBREMESA,
-                8.5,
-                "merengue"
-            ),
-            Prato(
-                R.drawable.merengue,
-                Categoria.SOBREMESA,
-                8.5,
-                "merengue"
-            ),
-            Prato(
-                R.drawable.merengue,
-                Categoria.SOBREMESA,
-                8.5,
-                "merengue"
+                R.drawable.fritas,
+                Categoria.PORCAO,
+                0.4,
+                11.00,
+                getString(R.string.prc1_nome),
+                getString(R.string.prc1_descricao)
             )
         ).sortedBy { it.nome }
     }
