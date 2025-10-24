@@ -1,36 +1,81 @@
 <resources>
     <string name="app_name">My Application</string>
 
-    <string name="title">projeto - cantina IFSP</string>
-
-    <!-- starters -->
+    <string name="title">IFSP Cafeteria Project</string>
 
     <string name="ent1_nome">Grilled Chicken</string>
-    <string name="ent1_descricao">A classic meal featuring a juicy, lightly seasoned chicken fillet grilled to perfection. Served with fluffy white rice and cooked beans.</string>
+    <string name="ent1_descricao">A classic meal, composed of a juicy, lightly seasoned chicken fillet, grilled on the griddle. Served with loose white rice and cooked beans.</string>
 
-    <!-- drinks -->
+    <string name="ent2_nome">Steak Parmigiana</string>
+    <string name="ent2_descricao">Slices of breaded and fried meat, covered with homemade tomato sauce and a generous layer of gratinated mozzarella cheese. Served with mashed potatoes.</string>
+
+    <string name="ent3_nome">Salmon with Passion Fruit Sauce</string>
+    <string name="ent3_descricao">Grilled salmon fillet, drizzled with a sweet and sour, refreshing passion fruit sauce. Served with broccoli rice and sautéed vegetables.</string>
+
+    <string name="ent4_nome">Eggplant Lasagna</string>
+    <string name="ent4_descricao">Vegetarian option with layers of grilled eggplant, cottage cheese, and tomato sauce, baked until gratinated.</string>
+
 
     <string name="bbd1_nome">Italian Soda</string>
-    <string name="bbd1_descricao">A light and refreshing drink made with sparkling water, ice, and a delicious fruit-flavored syrup of your choice.</string>
+    <string name="bbd1_descricao">A light and refreshing drink, prepared with sparkling water, ice, and a delicious fruit syrup of your choice.</string>
 
-    <!-- side dishes -->
+    <string name="bbd2_nome">Natural Orange Juice</string>
+    <string name="bbd2_descricao">Fresh, 100% natural juice, squeezed to order. No added sugar or preservatives.</string>
+
+    <string name="bbd3_nome">Swiss Lemonade</string>
+    <string name="bbd3_descricao">Traditional creamy recipe, made with lime, water, ice, and condensed milk.</string>
+
+    <string name="bbd4_nome">Flavored Water</string>
+    <string name="bbd4_descricao">Chilled water with slices of Sicilian lemon, cucumber rounds, and mint leaves. Extremely refreshing and zero calories.</string>
+
 
     <string name="prc1_nome">French Fries</string>
-    <string name="prc1_descricao">A generous portion of fries, cut into sticks, golden and crispy on the outside, with a soft and delicious interior.</string>
+    <string name="prc1_descricao">A generous portion of french fries, cut into sticks, golden and crispy on the outside, with a soft and delicious interior.</string>
 
-    <!-- appetizers -->
+    <string name="prc2_nome">Onion Rings</string>
+    <string name="prc2_descricao">Onion rings breaded in special flour, fried to perfection, resulting in a crispy and flavorful crust. Served with barbecue sauce.</string>
+
+    <string name="prc3_nome">Fried Cassava (Yuca)</string>
+    <string name="prc3_descricao">A portion of cooked and then fried cassava (yuca), seasoned with salt and rosemary. Ideal for accompanying any dish.</string>
+
+    <string name="prc4_nome">Mini Cheese Pastries</string>
+    <string name="prc4_descricao">Small pastries filled with creamy mozzarella, fried to order. Portion of 10 units.</string>
+
 
     <string name="apt1_nome">Toasts</string>
-    <string name="apt1_descricao">Served warm, they guarantee an unmatched texture in every bite.</string>
+    <string name="apt1_descricao">Served warm, they guarantee an unparalleled texture with every bite.</string>
 
     <string name="apt2_nome">Tuna Pâté</string>
     <string name="apt2_descricao">A classic and creamy pâté, prepared with high-quality tuna and seasoned with selected spices.</string>
 
-    <string name="apt3_nome">Bread Rolls</string>
-    <string name="apt3_descricao">Fresh and soft, these bread rolls are the perfect base to enjoy your favorite sides.</string>
+    <string name="apt3_nome">Small Breads</string>
+    <string name="apt3_descricao">Fresh and soft, these small breads are the ideal base for enjoying the sides.</string>
 
-    <!-- desserts -->
+    <string name="apt4_nome">Seasoned Olives</string>
+    <string name="apt4_descricao">A mix of green and black olives marinated in olive oil, garlic, and fine herbs.</string>
+
+    <string name="apt5_nome">Mini Cheese Rolls (Pão de Queijo)</string>
+    <string name="apt5_descricao">Traditional Brazilian cheese rolls, served warm and soft. Portion of 6 units.</string>
+
+    <string name="apt6_nome">Artisanal Butter</string>
+    <string name="apt6_descricao">Creamy and lightly salted butter, perfect to accompany toasts and small breads.</string>
+
 
     <string name="sbm1_nome">Meringue</string>
-    <string name="sbm1_descricao">A light dessert with a crispy exterior and soft interior, made mainly from egg whites whipped with sugar.</string>
+    <string name="sbm1_descricao">A light dessert, with a crunchy texture outside and soft inside, made mainly from egg whites beaten with sugar.</string>
+
+    <string name="sbm2_nome">Condensed Milk Pudding</string>
+    <string name="sbm2_descricao">Brazils favorite dessert. Creamy, with small holes, and a dark, delicious caramel sauce.</string>
+
+    <string name="sbm3_nome">Chocolate Mousse</string>
+    <string name="sbm3_descricao">Aerated and intense semi-sweet chocolate mousse. Finished with white chocolate shavings.</string>
+
+    <string name="sbm4_nome">Fruit Salad</string>
+    <string name="sbm4_descricao">A selection of fresh, seasonal fruits (strawberry, mango, banana, papaya, kiwi) cut into cubes and served chilled.</string>
+
+    <string name="site">site</string>
+    <string name="ligacao">call</string>
+    <string name="mapa">maps</string>
+    <string name="voltar">back</string>
+
 </resources>

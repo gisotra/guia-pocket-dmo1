@@ -4,24 +4,47 @@
     <string name="title">projeto - cantina IFSP</string>
 
     <!-- entradas -->
-
     <string name="ent1_nome">Frango Grelhado</string>
     <string name="ent1_descricao">Uma refeição clássica, composta por um filé de frango suculento e levemente temperado, grelhado na chapa. Servido com arroz branco soltinho e feijão cozido.</string>
 
-    <!-- bebidas -->
+    <string name="ent2_nome">Bife à Parmegiana</string>
+    <string name="ent2_descricao">Fatias de carne empanadas e fritas, cobertas com molho de tomate caseiro e uma generosa camada de queijo muçarela gratinado. Acompanha purê de batatas.</string>
 
+    <string name="ent3_nome">Salmão ao Molho Maracujá</string>
+    <string name="ent3_descricao">Filé de salmão grelhado, regado com um agridoce e refrescante molho de maracujá. Servido com arroz com brócolis e legumes salteados.</string>
+
+    <string name="ent4_nome">Lasanha de Berinjela</string>
+    <string name="ent4_descricao">Opção vegetariana com camadas de berinjela grelhada, queijo cottage e molho de tomate, gratinada ao forno.</string>
+
+    <!-- bebidas -->
     <string name="bbd1_nome">Soda Italiana</string>
     <string name="bbd1_descricao">Uma bebida leve e refrescante, preparada com água com gás, gelo e um delicioso xarope de frutas do sabor de sua preferência.</string>
 
-    <!-- porcoes -->
+    <string name="bbd2_nome">Suco Natural de Laranja</string>
+    <string name="bbd2_descricao">Suco fresco, 100% natural, espremido na hora. Sem adição de açúcares ou conservantes.</string>
 
+    <string name="bbd3_nome">Limonada Suíça</string>
+    <string name="bbd3_descricao">Receita cremosa e tradicional, feita com limão, água, gelo e leite condensado.</string>
+
+    <string name="bbd4_nome">Água Aromatizada</string>
+    <string name="bbd4_descricao">Água gelada com fatias de limão siciliano, rodelas de pepino e folhas de hortelã. Extremamente refrescante e zero calorias.</string>
+
+    <!-- porcoes -->
     <string name="prc1_nome">Batatas Fritas</string>
     <string name="prc1_descricao">Uma generosa porção de batatas fritas, cortadas em palitos, douradas e crocantes por fora, com o interior macio e delicioso.</string>
 
-    <!-- aperitivos -->
+    <string name="prc2_nome">Anéis de Cebola</string>
+    <string name="prc2_descricao">Anéis de cebola empanados em farinha especial, fritos até a perfeição, resultando em uma casquinha crocante e saborosa. Acompanha molho barbecue.</string>
 
+    <string name="prc3_nome">Mandioca Frita</string>
+    <string name="prc3_descricao">Porção de mandioca (aipim/macaxeira) cozida e depois frita, com toque de sal e alecrim. Ideal para acompanhar qualquer prato.</string>
+
+    <string name="prc4_nome">Mini Pastéis de Queijo</string>
+    <string name="prc4_descricao">Pequenos pastéis recheados com muçarela cremosa, fritos na hora. Porção de 10 unidades.</string>
+
+    <!-- aperitivos -->
     <string name="apt1_nome">Torradas</string>
-    <string name="apt1_descricao">Servidas quentinhas, garantem uma textura inigualável a cada mordida..</string>
+    <string name="apt1_descricao">Servidas quentinhas, garantem uma textura inigualável a cada mordida.</string>
 
     <string name="apt2_nome">Patê de Atum</string>
     <string name="apt2_descricao">Um patê clássico e cremoso, preparado com atum de alta qualidade e temperado com especiarias selecionadas.</string>
@@ -29,8 +52,33 @@
     <string name="apt3_nome">Paezinhos</string>
     <string name="apt3_descricao">Frescos e macios, estes pãezinhos são a base ideal para saborear os acompanhamentos.</string>
 
-    <!-- sobremesas -->
+    <string name="apt4_nome">Azeitonas Temperadas</string>
+    <string name="apt4_descricao">Mix de azeitonas verdes e pretas marinadas em azeite, alho e ervas finas.</string>
 
+    <string name="apt5_nome">Mini Pão de Queijo</string>
+    <string name="apt5_descricao">Pãezinhos de queijo tradicionais, servidos quentinhos e macios. Porção de 6 unidades.</string>
+
+    <string name="apt6_nome">Manteiga Artesanal</string>
+    <string name="apt6_descricao">Manteiga cremosa e levemente salgada, ideal para acompanhar as torradas e pãezinhos.</string>
+
+    <!-- sobremesas -->
     <string name="sbm1_nome">Merengue</string>
     <string name="sbm1_descricao">Um doce leve, com textura crocante por fora e macia por dentro, feito principalmente de claras de ovos batidas com açúcar</string>
+
+    <string name="sbm2_nome">Pudim de Leite Condensado</string>
+    <string name="sbm2_descricao">A sobremesa favorita do Brasil. Cremoso, com furinhos e uma calda de caramelo escura e deliciosa.</string>
+
+    <string name="sbm3_nome">Mousse de Chocolate</string>
+    <string name="sbm3_descricao">Mousse de chocolate meio amargo, aerada e intensa. Finalizada com raspas de chocolate branco.</string>
+
+    <string name="sbm4_nome">Salada de Frutas</string>
+    <string name="sbm4_descricao">Seleção de frutas frescas e da estação (morango, manga, banana, mamão, kiwi) cortadas em cubos e servidas geladas.</string>
+
+    <!-- activity detalhe prato -->
+    <string name="site">site</string>
+    <string name="ligacao">ligar</string>
+    <string name="mapa">maps</string>
+    <string name="voltar">voltar</string>
+
+
 </resources>

@@ -4,7 +4,7 @@
         <item name="colorPrimary">@color/primary</item>
         <item name="colorAccent">@color/secondary</item>
         <!-- Fundo da janela/tela -->
-        <item name="android:windowBackground">@color/background</item>
+        <item name="background">@color/background</item>
         <!-- Expondo suas cores "on*" como atributos do tema -->
         <item name="colorOnPrimary">@color/onPrimary</item>
         <item name="colorOnSecondary">@color/onSecondary</item>

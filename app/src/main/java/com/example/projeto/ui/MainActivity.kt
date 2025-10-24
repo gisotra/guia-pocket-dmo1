@@ -58,7 +58,32 @@ class MainActivity : AppCompatActivity() {
                 11.00,
                 getString(R.string.prc1_nome),
                 getString(R.string.prc1_descricao)
+            ),
+            Prato(
+                R.drawable.moussechoccy,
+                Categoria.SOBREMESA,
+                0.3,
+                12.50,
+                getString(R.string.sbm3_nome),
+                getString(R.string.sbm3_descricao)
+            ),
+            Prato(
+                R.drawable.lilcheesebread,
+                Categoria.APERITIVO,
+                0.2,
+                5.50,
+                getString(R.string.apt5_nome),
+                getString(R.string.apt5_descricao)
+            ),
+            Prato(
+                R.drawable.orangejuice,
+                Categoria.BEBIDA,
+                0.3,
+                10.00,
+                getString(R.string.bbd2_nome),
+                getString(R.string.bbd2_descricao)
             )
+
         ).sortedBy { it.nome }
     }
 

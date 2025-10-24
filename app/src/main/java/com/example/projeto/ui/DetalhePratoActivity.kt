@@ -1,8 +1,10 @@
 package com.example.projeto.ui
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.net.toUri
 import com.example.projeto.R
 import com.example.projeto.databinding.ActivityDetalhePratoBinding
 import com.example.projeto.model.Prato
@@ -38,13 +40,25 @@ class DetalhePratoActivity : AppCompatActivity() {
     private fun setupListeners() {
         binding.btnLigar.setOnClickListener {
             Toast
-                .makeText(this, "Ligar para o contato", Toast.LENGTH_SHORT)
+                .makeText(this, "Ligar para a Cantina.", Toast.LENGTH_SHORT)
                 .show()
         }
-        binding.btnEmail.setOnClickListener {
+        binding.btnMapa.setOnClickListener {
             Toast
-                .makeText(this, "Enviar email para o contato", Toast.LENGTH_SHORT)
+                .makeText(this, "Encontrar a localização no mapa.", Toast.LENGTH_SHORT)
                 .show()
+            val intent = Intent(Intent.ACTION_VIEW)
+            intent.data = "geo:0,0?q=Instituto+Federal+de+São+Paulo+Campus+Araraquara".toUri()
+            startActivity(intent)
+        }
+        binding.btnSite.setOnClickListener {
+            Toast
+                .makeText(this, "Pedir no Site.", Toast.LENGTH_SHORT)
+                .show()
+            val intent = Intent(Intent.ACTION_VIEW)
+            intent.data = "https://app.anota.ai/m/hXuQj51lw".toUri()
+            startActivity(intent)
+
         }
         binding.btnVoltar.setOnClickListener {
             finish()
