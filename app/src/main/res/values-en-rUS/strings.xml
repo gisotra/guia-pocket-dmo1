@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">My Application</string>
 
+    <string name="titulo">projeto - cantina IFSP</string>
+
     <!-- starters -->
 
     <string name="ent1_nome">Grilled Chicken</string>

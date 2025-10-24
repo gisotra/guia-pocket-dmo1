@@ -4,8 +4,7 @@
     android:layout_height="wrap_content"
     android:orientation="horizontal"
     android:padding="24dp"
-    android:layout_margin="5dp"
-    android:background=>
+    android:layout_margin="5dp">
     <ImageView
         android:id="@+id/imgFoto"
         android:layout_width="70dp"
@@ -32,7 +31,6 @@
             android:id="@+id/tvCategoria"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="13sp"
-            android:textColor="" />
+            android:textSize="13sp" />
     </LinearLayout>
 </LinearLayout>
