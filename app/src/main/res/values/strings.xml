@@ -1,34 +1,36 @@
 <resources>
-    <string name="app_name">Meu Aplicativo</string>
+    <string name="app_name">My Application</string>
 
-    <!-- entradas -->
+    <string name="title">projeto - cantina IFSP</string>
 
-    <string name="ent1_nome">Frango Grelhado</string>
-    <string name="ent1_descricao">Uma refeição clássica, composta por um filé de frango suculento e levemente temperado, grelhado na chapa. Servido com arroz branco soltinho e feijão cozido.</string>
+    <!-- starters -->
 
-    <!-- bebidas -->
+    <string name="ent1_nome">Grilled Chicken</string>
+    <string name="ent1_descricao">A classic meal featuring a juicy, lightly seasoned chicken fillet grilled to perfection. Served with fluffy white rice and cooked beans.</string>
 
-    <string name="bbd1_nome">Soda Italiana</string>
-    <string name="bbd1_descricao">Uma bebida leve e refrescante, preparada com água com gás, gelo e um delicioso xarope de frutas do sabor de sua preferência.</string>
+    <!-- drinks -->
 
-    <!-- porcoes -->
+    <string name="bbd1_nome">Italian Soda</string>
+    <string name="bbd1_descricao">A light and refreshing drink made with sparkling water, ice, and a delicious fruit-flavored syrup of your choice.</string>
 
-    <string name="prc1_nome">Batatas Fritas</string>
-    <string name="prc1_descricao">Uma generosa porção de batatas fritas, cortadas em palitos, douradas e crocantes por fora, com o interior macio e delicioso.</string>
+    <!-- side dishes -->
 
-    <!-- aperitivos -->
+    <string name="prc1_nome">French Fries</string>
+    <string name="prc1_descricao">A generous portion of fries, cut into sticks, golden and crispy on the outside, with a soft and delicious interior.</string>
 
-    <string name="apt1_nome">Torradas</string>
-    <string name="apt1_descricao">Servidas quentinhas, garantem uma textura inigualável a cada mordida..</string>
+    <!-- appetizers -->
 
-    <string name="apt2_nome">Patê de Atum</string>
-    <string name="apt2_descricao">Um patê clássico e cremoso, preparado com atum de alta qualidade e temperado com especiarias selecionadas.</string>
+    <string name="apt1_nome">Toasts</string>
+    <string name="apt1_descricao">Served warm, they guarantee an unmatched texture in every bite.</string>
 
-    <string name="apt3_nome">Paezinhos</string>
-    <string name="apt3_descricao">Frescos e macios, estes pãezinhos são a base ideal para saborear os acompanhamentos.</string>
+    <string name="apt2_nome">Tuna Pâté</string>
+    <string name="apt2_descricao">A classic and creamy pâté, prepared with high-quality tuna and seasoned with selected spices.</string>
 
-    <!-- sobremesas -->
+    <string name="apt3_nome">Bread Rolls</string>
+    <string name="apt3_descricao">Fresh and soft, these bread rolls are the perfect base to enjoy your favorite sides.</string>
 
-    <string name="sbm1_nome">Merengue</string>
-    <string name="sbm1_descricao">Um doce leve, com textura crocante por fora e macia por dentro, feito principalmente de claras de ovos batidas com açúcar</string>
+    <!-- desserts -->
+
+    <string name="sbm1_nome">Meringue</string>
+    <string name="sbm1_descricao">A light dessert with a crispy exterior and soft interior, made mainly from egg whites whipped with sugar.</string>
 </resources>

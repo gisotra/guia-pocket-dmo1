@@ -14,7 +14,7 @@ class DetalhePratoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityDetalhePratoBinding.inflate(layoutInflater)
-        setContentView(R.layout.activity_detalhe_prato)
+        setContentView(binding.root)
         loadData()
         setupViews()
         setupListeners()
@@ -22,15 +22,17 @@ class DetalhePratoActivity : AppCompatActivity() {
 
     private fun loadData()
     {
-        prato = intent.getSerializableExtra("prato") as Prato
+        prato = intent.getSerializableExtra("prato", Prato::class.java) as Prato
     }
 
     private fun setupViews()
     {
-        binding.tvNome.text = intent.getStringExtra("nome")
-        binding.tvTelefone.text = intent.getStringExtra("telefone")
-        binding.tvEmail.text = intent.getStringExtra("email")
-        binding.imgFoto.setImageResource(intent.getIntExtra("foto", R.drawable.ic_launcher_foreground))
+        binding.tvNome.text = prato.nome
+        binding.tvValor.text = "%.2f".format(prato.valor)
+        binding.tvDescricao.text = prato.descricao
+        binding.tvCategoria.text = prato.categoria.name
+        binding.tvPeso.text = "%.2f".format(prato.peso)
+        binding.imgFoto.setImageResource(prato.foto)
     }
 
     private fun setupListeners() {

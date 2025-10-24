@@ -69,12 +69,8 @@ class MainActivity : AppCompatActivity() {
 
     fun setupListeners(){
         binding.listViewPratos.setOnItemClickListener { _, _, position, _ ->
-            val prato = pratos[position]
             val intent = Intent(this, DetalhePratoActivity::class.java)
-            intent.putExtra("nome", prato.nome)
-            intent.putExtra("categoria", prato.categoria)
-            intent.putExtra("peso", prato.peso)
-            intent.putExtra("foto", prato.foto)
+            intent.putExtra("prato", pratos[position])
             startActivity(intent)
         }
     }

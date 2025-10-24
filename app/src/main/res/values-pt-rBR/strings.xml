@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Meu Aplicativo</string>
 
+    <string name="title">projeto - cantina IFSP</string>
+
     <!-- entradas -->
 
     <string name="ent1_nome">Frango Grelhado</string>

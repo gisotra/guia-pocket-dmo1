@@ -6,10 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
-import android.widget.ImageView
-import android.widget.TextView
-import com.example.projeto.R
-import com.example.projeto.databinding.ActivityDetalhePratoBinding
+import com.example.projeto.databinding.ItempratoBinding
 import com.example.projeto.model.Prato
 
 class PratoAdapter(
@@ -18,20 +15,21 @@ class PratoAdapter(
 ) : ArrayAdapter<Prato>(context, 0, lista) {
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
-        val binding: ActivityDetalhePratoBinding
+        val binding: ItempratoBinding
         val itemView: View
         if (convertView == null) {
-            binding = ActivityDetalhePratoBinding.inflate(LayoutInflater.from(context), parent, false)
+            binding = ItempratoBinding.inflate(LayoutInflater.from(context), parent, false)
             itemView = binding.root
             itemView.tag = binding
         } else {
             itemView = convertView
-            binding = itemView.tag as ActivityDetalhePratoBinding
+            binding = itemView.tag as ItempratoBinding
         }
-        val contato = lista[position]
-        binding.imgFoto.setImageResource(contato.foto)
-        binding.tvNome.text = contato.nome
+        val prato = lista[position]
+        binding.imgFoto.setImageResource(prato.foto)
+        binding.tvNome.text = prato.nome
+        binding.tvValor.text = "%.2f".format(prato.valor)
+        binding.tvCategoria.text = prato.categoria.name
         return itemView
     }
-}
 }
