@@ -42,6 +42,9 @@ class DetalhePratoActivity : AppCompatActivity() {
             Toast
                 .makeText(this, "Ligar para a Cantina.", Toast.LENGTH_SHORT)
                 .show()
+            val intent = Intent(Intent.ACTION_DIAL)
+            intent.data = "tel:16994298117".toUri()
+            startActivity(intent)
         }
         binding.btnMapa.setOnClickListener {
             Toast

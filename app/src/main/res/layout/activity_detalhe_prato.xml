@@ -21,47 +21,78 @@
             android:layout_height="160dp"
             android:src="@drawable/ic_launcher_foreground"
             android:scaleType="centerCrop"
-            android:layout_marginBottom="20dp" />
-        <TextView
-            android:id="@+id/tvNome"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=""
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="#333"
-            android:layout_marginBottom="8dp" />
-        <TextView
-            android:id="@+id/tvDescricao"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=""
-            android:textSize="16sp"
-            android:layout_marginBottom="4dp" />
-        <TextView
-            android:id="@+id/tvValor"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=""
-            android:textSize="16sp"
-            android:textColor="#555"
-            android:layout_marginBottom="32dp" />
-        <TextView
-            android:id="@+id/tvCategoria"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=""
-            android:textSize="16sp"
-            android:textColor="#555"
-            android:layout_marginBottom="32dp" />
-        <TextView
-            android:id="@+id/tvPeso"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=""
-            android:textSize="16sp"
-            android:textColor="#555"
-            android:layout_marginBottom="32dp" />
+            android:layout_marginBottom="10dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#F9F9F9"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            >
+            <TextView
+                android:id="@+id/tvNome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#333"
+                android:layout_marginBottom="8dp" />
+            <TextView
+                android:id="@+id/tvDescricao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp" />
+            <TextView
+                android:id="@+id/tvLabelValor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:text="Valor:" />
+            <TextView
+                android:id="@+id/tvValor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="16sp"
+                android:textColor="#555"
+                android:layout_marginBottom="32dp" />
+            <TextView
+                android:id="@+id/tvLabelCategoria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:text="Categoria:" />
+            <TextView
+                android:id="@+id/tvCategoria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="16sp"
+                android:textColor="#555"
+                android:layout_marginBottom="32dp" />
+            <TextView
+                android:id="@+id/tvLabelPeso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:text="Peso:" />
+            <TextView
+                android:id="@+id/tvPeso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="16sp"
+                android:textColor="#555"
+                android:layout_marginBottom="32dp" />
+
+        </LinearLayout>
 
         <!-- Botões -->
         <Button

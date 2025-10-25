@@ -83,7 +83,6 @@ class MainActivity : AppCompatActivity() {
                 getString(R.string.bbd2_nome),
                 getString(R.string.bbd2_descricao)
             )
-
         ).sortedBy { it.nome }
     }
 

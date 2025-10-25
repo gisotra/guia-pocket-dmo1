@@ -8,7 +8,7 @@
     android:background="#F9F9F9"
     android:padding="16dp"
     tools:context=".ui.MainActivity"
-    android:backgroundTint="?attr/colorPrimary">
+    android:backgroundTint="?attr/background">
 
     <TextView
         android:id="@+id/tvTitulo"
