@@ -1,7 +1,13 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.Projeto" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    <style name="Base.Theme.projeto" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Mapeia suas cores semânticas para os tokens de tema do AppCompat -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorAccent">@color/secondary</item>
+        <!-- Fundo da janela/tela -->
+        <item name="background">@color/background</item>
+        <!-- Expondo suas cores "on*" como atributos do tema -->
+        <item name="colorOnPrimary">@color/onPrimary</item>
+        <item name="colorOnSecondary">@color/onSecondary</item>
     </style>
+    <style name="Theme.projeto" parent="Base.Theme.projeto"/>
 </resources>

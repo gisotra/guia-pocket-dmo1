@@ -6,14 +6,15 @@
     android:orientation="vertical"
     android:background="#F9F9F9"
     android:padding="24dp"
-    android:gravity="center_horizontal">
+    android:gravity="center_horizontal"
+    android:backgroundTint="?attr/background">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="24dp"
-        android:gravity="center_horizontal"
-        >
+        android:gravity="center_horizontal">
         <!-- Cada atributo da Classe Prato -->
         <ImageView
             android:id="@+id/imgFoto"
@@ -29,6 +30,7 @@
             android:background="#F9F9F9"
             android:gravity="center_horizontal"
             android:layout_marginBottom="10dp"
+            android:backgroundTint="?attr/colorOnPrimary"
             >
             <TextView
                 android:id="@+id/tvNome"
@@ -38,35 +40,39 @@
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:textColor="#333"
-                android:layout_marginBottom="8dp" />
+                android:layout_marginBottom="5dp" />
             <TextView
                 android:id="@+id/tvDescricao"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text=""
                 android:textSize="16sp"
-                android:layout_marginBottom="4dp" />
+                android:layout_marginBottom="4dp"
+                android:textColor="?attr/background"/>
             <TextView
                 android:id="@+id/tvLabelValor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="13sp"
                 android:textStyle="bold"
-                android:text="Valor:" />
+                android:text="Valor:"
+                android:textColor="?attr/background"/>
             <TextView
                 android:id="@+id/tvValor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text=""
                 android:textSize="16sp"
-                android:textColor="#555"
-                android:layout_marginBottom="32dp" />
+                android:textColor="?attr/background"
+                android:layout_marginBottom="5dp"
+                />
             <TextView
                 android:id="@+id/tvLabelCategoria"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="13sp"
                 android:textStyle="bold"
+                android:textColor="?attr/background"
                 android:text="Categoria:" />
             <TextView
                 android:id="@+id/tvCategoria"
@@ -74,14 +80,15 @@
                 android:layout_height="wrap_content"
                 android:text=""
                 android:textSize="16sp"
-                android:textColor="#555"
-                android:layout_marginBottom="32dp" />
+                android:textColor="?attr/background"
+                android:layout_marginBottom="5dp" />
             <TextView
                 android:id="@+id/tvLabelPeso"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="13sp"
                 android:textStyle="bold"
+                android:textColor="?attr/background"
                 android:text="Peso:" />
             <TextView
                 android:id="@+id/tvPeso"
@@ -89,8 +96,9 @@
                 android:layout_height="wrap_content"
                 android:text=""
                 android:textSize="16sp"
-                android:textColor="#555"
-                android:layout_marginBottom="32dp" />
+                android:textColor="?attr/background"
+                android:layout_marginBottom="5dp"
+                />
 
         </LinearLayout>
 
@@ -100,8 +108,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/mapa"
-            android:backgroundTint="@android:color/holo_green_light"
-            android:textColor="#000"
+            android:backgroundTint="?attr/colorPrimary"
+            android:textColor="?attr/background"
             android:textStyle="bold"
             android:elevation="4dp"
             android:layout_marginBottom="16dp" />
@@ -110,8 +118,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/site"
-            android:backgroundTint="@android:color/holo_green_light"
-            android:textColor="#000"
+            android:backgroundTint="?attr/colorPrimary"
+            android:textColor="?attr/background"
             android:textStyle="bold"
             android:elevation="4dp"
             android:layout_marginBottom="16dp" />
@@ -120,8 +128,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/ligacao"
-            android:backgroundTint="@android:color/holo_green_light"
-            android:textColor="#000"
+            android:backgroundTint="?attr/colorPrimary"
+            android:textColor="?attr/background"
             android:textStyle="bold"
             android:elevation="4dp"
             android:layout_marginBottom="16dp" />
@@ -130,8 +138,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/voltar"
-            android:backgroundTint="@android:color/holo_purple"
-            android:textColor="#FFF"
+            android:backgroundTint="?attr/colorPrimary"
+            android:textColor="?attr/background"
             android:textStyle="bold"
             android:elevation="2dp" />
     </LinearLayout>
