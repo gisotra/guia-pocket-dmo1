@@ -2,11 +2,12 @@
 --- 
 ## 💻​ Proposta
 
-Aplicativo desenvolvido em **Kotlin** a partir do **Android Studio**, é um projeto simples que ilustra o funcionamento de intents dentro do desenvolvimento **Mobile**. 
+Aplicativo finalizado e desenvolvido em **Kotlin** a partir do **Android Studio**, é um projeto simples que ilustra o funcionamento de diferentes activities através de intents. 
 ### O programa apresenta as seguintes funcionalidades: 
 - List View com fotos e dados personalizados;
 - Internacionalização, com Inglês e Português;
 - Modo Dia e Noite;
+- ViewBinding
 
 --- 
 
@@ -25,5 +26,20 @@ Aplicativo desenvolvido em **Kotlin** a partir do **Android Studio**, é um proj
 </p>
 
 ## 🎥 Vídeo Ilustrativo
+
+
+---
+
+## ✔ Status
+Finalizado - Projeto funcional com lista de pratos, tela de detalhes e ações
+nativas do sistema.
+
+## 💾 Instalação
+<pre>
+git clone https://github.com/gisotra/guia-pocket-dmo1.git
+cd guia-pocket-dmo1
+./gradlew build
+</pre>
+
 
 
