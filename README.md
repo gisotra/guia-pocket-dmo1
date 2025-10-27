@@ -13,16 +13,16 @@ Aplicativo finalizado e desenvolvido em **Kotlin** a partir do **Android Studio*
 
 ## 🌞 Modo Dia/Claro 
 <p align="left">
-  <img src="./img/light_mode_1.png" width="250"/>
+  <img src="https://github.com/gisotra/guia-pocket-dmo1/blob/main/img/light_mode_1.png/>
   
-  <img src="./img/light_mode_2.png" width="250" margin_left="50px"/>
+  <img src="https://github.com/gisotra/guia-pocket-dmo1/blob/main/img/light_mode_2.png"/>
 </p>
 
 ## 🌚​ Modo Noite/Escuro
 <p align="left">
-  <img src="./img/dark_mode_1.png" width="250"/>
+  <img src="https://github.com/gisotra/guia-pocket-dmo1/blob/main/img/dark_mode_1.png"/>
   
-  <img src="./img/dark_mode_2.png" width="250" margin_left="50px"/>
+  <img src="https://github.com/gisotra/guia-pocket-dmo1/blob/main/img/dark_mode_2.png"/>
 </p>
 
 ## 🎥 Vídeo Ilustrativo
