@@ -27,7 +27,7 @@ Aplicativo finalizado e desenvolvido em **Kotlin** a partir do **Android Studio*
 
 ## 🎥 Vídeo Ilustrativo
 
-
+https://github.com/gisotra/guia-pocket-dmo1/blob/main/video/gravacao2.mp4
 ---
 
 ## ✔ Status
@@ -40,6 +40,8 @@ git clone https://github.com/gisotra/guia-pocket-dmo1.git
 cd guia-pocket-dmo1
 ./gradlew build
 </pre>
+
+
 
 
 
