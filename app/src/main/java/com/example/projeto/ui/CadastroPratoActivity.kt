@@ -6,14 +6,15 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.projeto.R
+import com.example.projeto.databinding.ActivityCadastroPratoBinding
 import com.example.projeto.model.Prato
 
 class CadastroPratoActivity : AppCompatActivity(){
-    private lateinit var binding: ActivityCadastroBinding
+    private lateinit var binding: ActivityCadastroPratoBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityCadastroBinding.inflate(layoutInflater)
+        binding = ActivityCadastroPratoBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         setupListeners()
@@ -21,16 +22,19 @@ class CadastroPratoActivity : AppCompatActivity(){
 
     private fun setupListeners() {
         binding.btnSalvar.setOnClickListener {
+            val foto = binding.imgFoto.text.toString()
+            val categoria = binding.edtCategoria.text.toString()
+            val peso = binding.edtPeso.text.toString()
+            val valor = binding.edtValor.text.toString()
             val nome = binding.edtNome.text.toString()
-            val telefone = binding.edtTelefone.text.toString()
-            val email = binding.edtEmail.text.toString()
+            val descricao = binding.edtDesc.text.toString()
 
-            if (nome.isNotBlank() && telefone.isNotBlank() && email.isNotBlank()) {
+            if (foto.isNotBlank() && categoria.isNotBlank() && peso.isNotBlank() && valor.isNotBlank() && nome.isNotBlank() && descricao.isNotBlank()) {
                 val novoContato = Prato(
                     foto = R.drawable.ic_launcher_foreground,
+                    categoria = categoria,
                     nome = nome,
-                    telefone = telefone,
-                    email = email
+                    valor = valor,
                 )
 
                 val resultIntent = Intent().apply {

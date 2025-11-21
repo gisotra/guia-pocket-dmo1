@@ -77,5 +77,6 @@
     <string name="ligacao">call</string>
     <string name="mapa">maps</string>
     <string name="voltar">back</string>
+    <string name="adicionar">add</string>
 
 </resources>

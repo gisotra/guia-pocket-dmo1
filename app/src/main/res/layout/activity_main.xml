@@ -1,39 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#F9F9F9"
     android:padding="16dp"
-    tools:context=".ui.MainActivity"
-    android:backgroundTint="?attr/background">
+    tools:context=".ui.MainActivity">
 
     <TextView
         android:id="@+id/tvTitulo"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="26sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:textColor="?attr/colorOnPrimary"
-        android:paddingBottom="20dp"
-        android:paddingTop="8dp"
-        android:text="@string/title" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/listViewPratos"
-        android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:divider="@android:color/transparent"
-        android:dividerHeight="8dp" />
+        android:text="@string/title"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="#333"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/btnAdicionar"
-        android:text="Adicionar"
-        android:layout_width="match_parent"
-        android:layout_height="90px"/>
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/adicionar"
+        android:textAllCaps="false"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:elevation="4dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@id/tvTitulo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-</LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listViewPratos"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:divider="@android:color/holo_purple"
+        android:dividerHeight="2dp"
+        android:background="@android:color/white"
+        android:elevation="10dp"
+        android:padding="8dp"
+        android:listSelector="@android:color/holo_green_light"
+        app:layout_constraintTop_toBottomOf="@id/btnAdicionar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
