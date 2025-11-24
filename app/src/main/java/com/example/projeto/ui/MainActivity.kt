@@ -1,21 +1,32 @@
 package com.example.projeto.ui
 
+import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
+import androidx.activity.result.ActivityResultLauncher
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.projeto.R
 import com.example.projeto.adapter.PratoAdapter
+import com.example.projeto.data.db.AgendaDatabase
 import com.example.projeto.databinding.ActivityMainBinding
-import com.example.projeto.model.Categoria
 import com.example.projeto.model.Prato
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 class MainActivity : AppCompatActivity() {
 //pacote ui representa as telas (activity)
     private lateinit var binding: ActivityMainBinding
     private lateinit var pratos: MutableList<Prato>
     private lateinit var adapter: PratoAdapter
+    private lateinit var launcherCadastro: ActivityResultLauncher<Intent>
+    private lateinit var db: AgendaDatabase
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,68 +36,19 @@ class MainActivity : AppCompatActivity() {
         /*Inicialização*/
         loadData()
         setupRecyclerView()
+        setupLauncherCadastro()
         setupListeners()
     }
 
     fun loadData(){
-        pratos = mutableListOf(
-            Prato(
-                R.drawable.merengue,
-                Categoria.SOBREMESA,
-                0.5,
-                15.50,
-                getString(R.string.sbm1_nome),
-                getString(R.string.sbm1_descricao)
-            ),
-            Prato(
-                R.drawable.frango,
-                Categoria.ENTRADA,
-                1.1,
-                22.50,
-                getString(R.string.ent1_nome),
-                getString(R.string.ent1_descricao)
-            ),
-            Prato(
-                R.drawable.soda,
-                Categoria.BEBIDA,
-                0.2,
-                15.00,
-                getString(R.string.bbd1_nome),
-                getString(R.string.bbd1_descricao)
-            ),
-            Prato(
-                R.drawable.fritas,
-                Categoria.PORCAO,
-                0.4,
-                11.00,
-                getString(R.string.prc1_nome),
-                getString(R.string.prc1_descricao)
-            ),
-            Prato(
-                R.drawable.moussechoccy,
-                Categoria.SOBREMESA,
-                0.3,
-                12.50,
-                getString(R.string.sbm3_nome),
-                getString(R.string.sbm3_descricao)
-            ),
-            Prato(
-                R.drawable.lilcheesebread,
-                Categoria.APERITIVO,
-                0.2,
-                5.50,
-                getString(R.string.apt5_nome),
-                getString(R.string.apt5_descricao)
-            ),
-            Prato(
-                R.drawable.orangejuice,
-                Categoria.BEBIDA,
-                0.3,
-                10.00,
-                getString(R.string.bbd2_nome),
-                getString(R.string.bbd2_descricao)
-            )
-        ).sortedBy { it.nome }.toMutableList()
+        pratos = mutableListOf()
+        db = AgendaDatabase.getInstance(this)
+        lifecycleScope.launch(Dispatchers.IO) {
+            pratos = db.pratoDao().listarTodos().toMutableList()
+            withContext(Dispatchers.Main) {
+                adapter.updateLista(pratos)
+            }
+        }
     }
 
     fun setupRecyclerView(){
@@ -96,29 +58,42 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent);
         }
 
-        binding.listViewPratos.layoutManager = LinearLayoutManager(this)
-        binding.listViewPratos.addItemDecoration(
-            DividerItemDecoration(this, DividerItemDecoration.VERTICAL)
-        )
-        binding.listViewPratos.adapter = adapter
+        binding.listViewPratos.apply {
+            layoutManager = LinearLayoutManager(this@MainActivity)
+            adapter = this@MainActivity.adapter
+            addItemDecoration(
+                DividerItemDecoration(context, DividerItemDecoration.VERTICAL)
+            )
+        }
+    }
+
+    private fun setupLauncherCadastro() {
+        launcherCadastro = registerForActivityResult(
+            ActivityResultContracts.StartActivityForResult()
+        ) { result ->
+            if (result.resultCode == Activity.RESULT_OK) {
+                loadData()
+            }
+        }
     }
 
     fun setupListeners(){
-        /*binding.btnAdicionar.setOnItemClickListener {
+        binding.btnAdicionar.setOnClickListener {
             val intent = Intent(this, CadastroPratoActivity::class.java)
-            startActivity(intent)
-        }*/
+            launcherCadastro.launch(intent)
+        }
+        binding.edtFiltro.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                val filtro = s.toString().lowercase()
+                val filtrados = pratos.filter {
+                    it.nome.lowercase().contains(filtro)
+                }
+                adapter.updateLista(filtrados)
+            }
+            override fun afterTextChanged(s: Editable?) {}
+        })
     }
-}
+    }
 
 
-/*
-private fun setupListeners() {
-binding.btnAdicionar.setOnClickListener {
-val intent = Intent(this, CadastroContatoActivity::class.java)
-startActivity(intent)
-}
-}
-}
-
-*/

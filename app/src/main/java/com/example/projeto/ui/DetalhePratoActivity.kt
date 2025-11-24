@@ -17,6 +17,7 @@ class DetalhePratoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityDetalhePratoBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
         loadData()
         setupViews()
         setupListeners()
@@ -30,11 +31,10 @@ class DetalhePratoActivity : AppCompatActivity() {
     private fun setupViews()
     {
         binding.tvNome.text = prato.nome
-        binding.tvValor.text = "%.2f".format(prato.valor)
+        binding.tvValor.text = prato.valor
         binding.tvDescricao.text = prato.descricao
-        binding.tvCategoria.text = prato.categoria.name
-        binding.tvPeso.text = "%.2f".format(prato.peso)
-        binding.imgFoto.setImageResource(prato.foto)
+        binding.tvPeso.text = prato.peso
+        binding.imgFoto.setImageURI(prato.foto.toUri())
     }
 
     private fun setupListeners() {

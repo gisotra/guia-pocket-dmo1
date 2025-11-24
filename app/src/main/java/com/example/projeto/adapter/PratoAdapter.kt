@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
+import androidx.core.net.toUri
 import androidx.recyclerview.widget.RecyclerView
 import com.example.projeto.databinding.ItempratoBinding
 import com.example.projeto.model.Prato
@@ -16,7 +17,7 @@ A classe PratoAdapter é responsável por conectar os dados da lista de pratos
 
 
 class PratoAdapter(
-    private val pratos: List<Prato>,
+    private var pratos: List<Prato>,
     private val onClick: (Prato) -> Unit
 ) : RecyclerView.Adapter<PratoAdapter.ViewHolder>() {
 
@@ -33,12 +34,15 @@ class PratoAdapter(
 
     override fun getItemCount(): Int = pratos.size
 
+    fun updateLista(novosPratos: List<Prato>) {
+        this.pratos = novosPratos
+        notifyDataSetChanged()
+    }
     inner class ViewHolder(val binding: ItempratoBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(prato: Prato) {
-            binding.imgFoto.setImageResource(prato.foto)
+            binding.imgFoto.setImageURI(prato.foto.toUri())
             binding.tvNome.text = prato.nome
-            binding.tvValor.text = "%.2f".format(prato.valor)
-            binding.tvCategoria.text = prato.categoria.name
+            binding.tvValor.text = prato.valor
             binding.root.setOnClickListener { onClick(prato) }
         }
     }

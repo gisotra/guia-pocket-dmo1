@@ -16,6 +16,9 @@
             android:name=".ui.DetalhePratoActivity"
             android:exported="true" />
         <activity
+            android:name=".ui.CadastroPratoActivity"
+            android:exported="true" />
+        <activity
             android:name=".ui.MainActivity"
             android:exported="true">
             <intent-filter>
