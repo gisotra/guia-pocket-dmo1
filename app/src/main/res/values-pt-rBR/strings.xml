@@ -81,4 +81,6 @@
     <string name="voltar">voltar</string>
     <string name="adicionar">adicionar</string>
 
+    <string name="filtrar">Filtrar por nome</string>
+
 </resources>

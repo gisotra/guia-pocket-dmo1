@@ -79,4 +79,5 @@
     <string name="voltar">back</string>
     <string name="adicionar">add</string>
 
+    <string name="filtrar">Filter by name</string>
 </resources>
