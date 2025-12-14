@@ -2,12 +2,14 @@
 --- 
 ## 💻​ Proposta
 
-Aplicativo finalizado e desenvolvido em **Kotlin** a partir do **Android Studio**, é um projeto simples que ilustra o funcionamento de diferentes activities através de intents. 
+Aplicativo finalizado e desenvolvido em **Kotlin** a partir do **Android Studio**, é um projeto simples que ilustra o funcionamento de diferentes activities através de intents e persistência de dados 
+através do uso de Room. 
 ### O programa apresenta as seguintes funcionalidades: 
 - List View com fotos e dados personalizados;
 - Internacionalização, com Inglês e Português;
 - Modo Dia e Noite;
-- ViewBinding
+- ViewBinding;
+- Formulário interativo para adicionar novo prato;
 
 --- 
 
