@@ -34,7 +34,7 @@ https://github.com/gisotra/guia-pocket-dmo1/blob/main/video/gravacao2.mp4
 ---
 
 Trabalho 2 
-https://github.com/gisotra/guia-pocket-dmo1/blob/main/video/gravacao_final.mp4
+https://github.com/gisotra/guia-pocket-dmo1/blob/main/video/gravação_final.mp4
 ---
 
 ## ✔ Status
